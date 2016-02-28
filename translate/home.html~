@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        .swanalekha {
+            border-left: 3px solid #cc0000;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #cc0000;
+        }
+        
+        .container {
+            width: 50%;
+            margin-left: 25%;
+            padding: 10px;
+            color: #333;
+            box-shadow: 0 0 5px #888;
+            border-radius: 2px;
+        }
+        
+        .instruction {
+            font-size: small;
+            color: #777;
+        }
+        
+        textarea {
+            width: 100%;
+            font-size: larger;
+            padding: 10px;
+            height: 50%;
+            border-radius: 2px;
+            font-family: "Meera", "Rachana", sans-serif;
+        }
+        
+        footer {
+            font-size: smaller;
+        }
+        
+        a {
+            color: #333;
+        }
+        
+        a:hover {
+            color: #cc0000;
+        }
+        
+        pre {
+            border-left: 5px solid #ccc;
+            border-radius: 5px;
+            background-color: #eee;
+            padding: 10px;
+        }
+    </style>
+</head>
+<title>Swanalekha Malayalam</title>
+<script src="swanalekha-ml.js"></script>
+<script type="text/javascript" src="data.json"></script>
+<script>
+    window.onload = function () {
+        swanalekha(document.getElementsByTagName('textarea')[0], {
+            enabled: true
+        });
+    };
+    var mydata = JSON.parse(data);
+</script>
+
+<body>
+    <div class="container">
+        <h1>Type Malayalam</h1>
+        <p class="instruction">Press control+m to enable and disable malayalam typing.</p>
+        <textarea></textarea>
+
+    </div>
+</body>
+
+</html>

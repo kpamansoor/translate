@@ -57,12 +57,14 @@
 </head>
 <title>Swanalekha Malayalam</title>
 <script src="swanalekha-ml.js"></script>
+<script type="text/javascript" src="data.json"></script>
 <script>
     window.onload = function () {
         swanalekha(document.getElementsByTagName('textarea')[0], {
             enabled: true
         });
     };
+    var mydata = JSON.parse(data);
 </script>
 
 <body>
